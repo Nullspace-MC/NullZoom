@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "nullzoom",
+	"version": "${version}",
+	"name": "NullZoom",
+	"description": "Simple zoom mod",
+	"authors": [
+		"SRAZKVT"
+	],
+	"contact": {
+		"homepage": "https://github.com/Nullspace-MC/NullZoom",
+		"sources": "https://github.com/Nullspace-MC/NullZoom"
+	},
+	"license": "MIT",
+	"icon": "assets/nullzoom/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client-init": [
+			"net.nullspace_mc.nullzoom.NullZoom"
+		]
+	},
+	"mixins": [
+		"nullzoom.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "1.7.2",
+		"osl-entrypoints": ">=0.4.0"
+	}
+}
